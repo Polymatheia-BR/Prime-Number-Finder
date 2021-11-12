@@ -33,6 +33,26 @@ public class Program {
 			System.out.println(qtd + "° numeros encontrados.");
 		
 		}
+		
+		if(menu == 2) {
+			int x = 1;
+			while(true) {
+				while(true) {
+					x++;
+					for(int i = 1;i<=x;i++) {
+						if(x%i == 0) {
+							z++;
+						}
+					}
+					if(z == 2) {
+						System.out.println(x);
+						z = 0;
+					} else {
+						z = 0;
+					}
+				}
+			}
+		}
 		input.close();
 
 	}
